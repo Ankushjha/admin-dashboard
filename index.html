@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard</title>
+    <!-- custom css  -->
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <!-- Bootstrap Font Icon CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" />
+</head>
+
+<body>
+
+    <div class="container-fluid">
+        <header>
+            <div class="left">
+                <!-- menu collapsable  -->
+                <div class="menu-hamburger">
+                    <i class="bi bi-list"></i>
+                    <div class="admin">
+                        <i class="bi bi-asterisk"></i>
+                        <span>Admin</span>
+                    </div>
+                </div>
+                <!-- search  -->
+
+                <div class="search">
+                    <input type="text" placeholder="Search for users, groups or settings" id="search">
+
+                    <i class="bi bi-search"></i>
+                </div>
+
+
+            </div>
+
+            <div class="right">
+                <i class="bi bi-bell"></i>
+                <i class="bi bi-hourglass"></i>
+                <i class="bi bi-question-circle"></i>
+                <i class="bi bi-three-dots-vertical"></i>
+                <img src="./assets//images/user2.jpg" alt="user" width="24px" height="24px">
+            </div>
+        </header>
+
+        <!-- body section  -->
+        <div class="container">
+            <!-- menu section  -->
+            <section class="section-left">
+                <menu>
+                    <ul>
+                        <li>
+                            <i class="bi bi-house-door"></i>
+                            <span>Home</span>
+                        </li>
+                        <li class="active-menu">
+                            <div>
+                                <i class="bi bi-caret-down-fill"></i>
+                                <i class="bi bi-person"></i>
+                                <span>Directory</span>
+                            </div>
+                            <ul>
+                                <li>Users</li>
+                                <li>Groups</li>
+                                <li>Organizational units</li>
+                                <li>
+                                    <i class="bi bi-caret-right-fill"></i>
+                                    <span>Building and resources</span>
+                                </li>
+                                <li>Directory settings</li>
+                                <li>Directory sync</li>
+                            </ul>
+                        </li>
+
+                        <li>
+                            <i class="bi bi-caret-right-fill"></i>
+                            <i class="bi bi-laptop"></i>
+                            <span>Devices</span>
+                        </li>
+                        <li>
+                            <i class="bi bi-caret-right-fill"></i>
+                            <i class="bi bi-menu-button-wide"></i>
+                            <span>Apps</span>
+                        </li>
+                        <li>
+                            <i class="bi bi-caret-right-fill"></i>
+                            <i class="bi bi-suit-heart"></i>
+                            <span>Generative AI</span>
+                        </li>
+                        <li>
+                            <i class="bi bi-caret-right-fill"></i>
+                            <i class="bi bi-receipt"></i>
+                            <span>Billing</span>
+                        </li>
+                        <li>
+                            <i class="bi bi-caret-right-fill"></i>
+                            <i class="bi bi-at"></i>
+                            <span>Account</span>
+                        </li>
+                    </ul>
+
+
+                    <button>Show more</button>
+                </menu>
+
+                <div class="extra">
+                    <hr>
+
+                    <div class="try-gemini">
+                        <span>
+                            <i class="bi bi-trophy"></i>
+                            <span>Try Gemini</span>
+                        </span>
+                        <i class="bi bi-arrow-right"></i>
+                    </div>
+
+                    <div class="feedback">
+                        <i class="bi bi-chat-left-dots"></i>
+                        <span>Send feedback</span>
+                    </div>
+                </div>
+            </section>
+
+            <!-- content section  -->
+            <section class="section-right">
+                <!-- breadcrumb  -->
+                <div class="breadcrumb">
+                    <span style="color: darkgrey;">User</span> > <span>arun verma</span>
+                </div>
+
+                <hr>
+                <!-- admin panel container  -->
+                <div class="admin-container">
+
+                    <!-- admin profile data  -->
+                    <section class="admin-profile">
+                        <div class="card">
+                            <div class="card-header">
+                                <span class="badge">ADMIN</span>
+                                <div class="card-profile">
+                                    <img src="./assets/images/user2.jpg" width="40px" height="40px"
+                                        alt="Profile Picture" class="profile-pic">
+                                    <div class="card-profile-details">
+                                        <h2 class="name">arun varma</h2>
+                                        <p class="email">arun@syncrooms.in</p>
+                                        <p class="status">Active</p>
+                                        <p class="last-signin">Last sign in: 2 minutes ago</p>
+                                        <p class="created">Created: Jun 18, 2016</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <p class="org-unit">Organizational unit</p>
+                                <p class="org-name">syncrooms.in</p>
+                            </div>
+                            <div class="card-actions">
+                                <ul class="actions">
+                                    <li>RESET PASSWORD</li>
+                                    <li>UPDATE USER</li>
+                                    <li>ADD ALTERNATE EMAILS</li>
+                                    <li>ADD TO GROUPS</li>
+                                    <li>EMAIL</li>
+                                    <li>SUSPEND USER</li>
+                                    <li>RESTORE DATA</li>
+                                    <li>DELETE USER</li>
+                                    <li>CHANGE ORGANIZATIONAL UNIT</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- admin data and insights  -->
+                    <section class="profile-details">
+                        <!-- main menu  -->
+                        <div class="profile-details-menu">
+                            <div class="menu">
+                                <ul class="menu-list">
+                                    <li class="menu-item active">User details</li>
+                                    <li class="menu-item">Security</li>
+                                    <li class="menu-item">Groups</li>
+                                    <li class="menu-item">Investigate</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="profile-details-user-details">
+                            <!-- alert box  -->
+                            <div class="profile-details-alert">
+                                <div class="alert-left">
+                                    <i class="bi bi-bell"></i>
+                                    <span>Alerts in the last 7 days for arun varma</span>
+                                </div>
+                                <div class="alert-right">
+                                    <a href="#">View alerts</a>
+                                </div>
+                            </div>
+
+                            <!-- storage section  -->
+                            <div class="storage-card section">
+                                <h3>Storage use and settings for <strong>arun varma</strong></h3>
+
+                                <div class="storage-usage-details">
+                                    <div class="total-used">
+                                        <div class="icon">
+                                            <i class="bi bi-cloud"></i>
+                                        </div>
+                                        <div style="text-align: center;">
+                                            <p class="label">Total Used</p>
+                                            <p class="amount">9.16 GB</p>
+                                        </div>
+                                    </div>
+
+                                    <div class="storage-details">
+                                        <div class="storage-details-middle">
+                                            <div class="storage-item">
+                                                <img src="https://img.icons8.com/?size=100&id=ya4CrqO7PgnY&format=png&color=000000"
+                                                    alt="Drive" class="storage-icon">
+                                                <div style="text-align: center;">
+                                                    <p>Drive</p>
+                                                    <p class="amount">3.07 GB</p>
+                                                </div>
+                                            </div>
+                                            <div class="storage-item">
+                                                <img src="https://img.icons8.com/?size=100&id=P7UIlhbpWzZm&format=png&color=000000"
+                                                    alt="Gmail" class="storage-icon">
+                                                <div style="text-align: center;">
+                                                    <p>Gmail</p>
+                                                    <p class="amount">6.04 GB</p>
+                                                </div>
+                                            </div>
+                                            <div class="storage-item">
+                                                <img src="https://img.icons8.com/?size=100&id=XCB5Qqu27Mt0&format=png&color=000000"
+                                                    alt="Photos" class="storage-icon">
+                                                <div style="text-align: center;">
+                                                    <p>Photos</p>
+                                                    <p class="amount">50 MB</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="storage-item storage-item-doc">
+                                            <div class="docs-icon">
+                                                <img src="https://img.icons8.com/?size=100&id=24511&format=png&color=000000"
+                                                    alt="Docs" class="storage-icon">
+                                            </div>
+                                            <div style="text-align: center;">
+                                                <p>Docs owned</p>
+                                                <p class="amount">1,000+</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <hr>
+                                <div class="storage-limit">
+                                    <div class="limit-left">
+                                        <p class="label">Storage limit</p>
+                                        <p class="subtext">Inherited from <a href="#">syncrooms.in</a></p>
+                                    </div>
+                                    <div class="limit-right">
+                                        <p class="label">Storage limit for user</p>
+                                        <p class="subtext">OFF</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- admin roles and privileges section  -->
+                            <div class="admin-roles section">
+                                <div class="section-header">
+                                    <h4>Admin roles and privileges</h4>
+                                    <span class="arrow">▼</span>
+                                </div>
+                                <div class="roles-privileges">
+                                    <div class="roles">
+                                        <p><strong>Roles</strong></p>
+                                        <p>Groups Admin, Super Admin</p>
+                                    </div>
+                                    <div class="privileges">
+                                        <p><strong>Privileges</strong></p>
+                                        <p>189 Admin console privileges, 50 Admin API privileges</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- admin roles and privileges section  -->
+                            <div class="admin-roles section">
+                                <div class="section-header">
+                                    <h4>Admin roles and privileges</h4>
+                                    <span class="arrow">▼</span>
+                                </div>
+                                <div class="roles-privileges">
+                                    <div class="roles">
+                                        <p><strong>Roles</strong></p>
+                                        <p>Groups Admin, Super Admin</p>
+                                    </div>
+                                    <div class="privileges">
+                                        <p><strong>Privileges</strong></p>
+                                        <p>189 Admin console privileges, 50 Admin API privileges</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- admin roles and privileges section  -->
+                            <div class="admin-roles section">
+                                <div class="section-header">
+                                    <h4>Admin roles and privileges</h4>
+                                    <span class="arrow">▼</span>
+                                </div>
+                                <div class="roles-privileges">
+                                    <div class="roles">
+                                        <p><strong>Roles</strong></p>
+                                        <p>Groups Admin, Super Admin</p>
+                                    </div>
+                                    <div class="privileges">
+                                        <p><strong>Privileges</strong></p>
+                                        <p>189 Admin console privileges, 50 Admin API privileges</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- admin roles and privileges section  -->
+                            <div class="admin-roles section">
+                                <div class="section-header">
+                                    <h4>Admin roles and privileges</h4>
+                                    <span class="arrow">▼</span>
+                                </div>
+                                <div class="roles-privileges">
+                                    <div class="roles">
+                                        <p><strong>Roles</strong></p>
+                                        <p>Groups Admin, Super Admin</p>
+                                    </div>
+                                    <div class="privileges">
+                                        <p><strong>Privileges</strong></p>
+                                        <p>189 Admin console privileges, 50 Admin API privileges</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- admin roles and privileges section  -->
+                            <div class="admin-roles section">
+                                <div class="section-header">
+                                    <h4>Admin roles and privileges</h4>
+                                    <span class="arrow">▼</span>
+                                </div>
+                                <div class="roles-privileges">
+                                    <div class="roles">
+                                        <p><strong>Roles</strong></p>
+                                        <p>Groups Admin, Super Admin</p>
+                                    </div>
+                                    <div class="privileges">
+                                        <p><strong>Privileges</strong></p>
+                                        <p>189 Admin console privileges, 50 Admin API privileges</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </section>
+                </div>
+            </section>
+        </div>
+    </div>
+
+    <!-- custom js  -->
+    <script src="assets/js/index.js"></script>
+    <!-- bootstrap js  -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
